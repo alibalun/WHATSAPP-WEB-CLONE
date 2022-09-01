@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$font-familly: 'Noto Sans', sans-serif;
+$app-background: #00A884;
+$status-main-area-color: #FFFFFF8C;
+body {
+    font-family: $font-familly;
+}
+::-webkit-scrollbar{
+    width:6px;
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    width:4px;
+    background-color: rgb(202, 202, 202);
+}
+  /* Classes in here for usage on website */
+.container{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    &:hover{
+        cursor:pointer;
+    }
+}
+.chatlist-header-icons{
+    width:22px;
+    height:22px;
+}
+.chatlist-header-icon-right{
+    width:18px !important;
+    height:18px !important;
+}
+.chatlist-icons-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .logoContainer */
+.logo-container{
+    width:95%;
+    box-sizing: border-box;
+    height:73px;
+    display:flex;
+    align-items:center;
+    border-top : 1px solid rgba(128, 128, 128, 0.21);
+    padding:0 15px;
+}
+/* .logo-sqr */
+.logo-sqr{
+    width:49px !important;
+    height:49px !important;
+    background-color:red;
+}
+/* createImageContainer() */
+.image-container{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color:blue;
+}
+/* messageHeaderContainer */
+.message-header-container{
+    width:84%;
+    height:40px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin-left:12px;
+}
+/* createMessageHeader */
+.message-header{
+    font-size:17px;
+    width: 100%;
+    position:relative;
+}
+/* createMessageTime() */
+.message-time{
+    color:green !important;
+    font-weight:bold !important;
+    font-size:12px !important;
+    position:absolute !important;
+    right:0 !important;
+}
+/* createLastMessageContainer() */
+.last-message-container{
+    font-size:14px;
+    text-overflow: hidden;
+}
+ /* Profile section */ 
+.profile-input-container{
+    font-size:17px;
+    color:#3B4A54;
+    width:384px;
+    .input-container{
+        width:100%;
+        display:flex;
+        position:relative;
+        input{
+            height:20px;
+            margin:8px 0;
+            width:100%;
+            border:none;
+            font-size:17px;
+            &:focus{
+                outline:none;
+                /* set with js */border-bottom:2px solid #008069;
+            }
+        }
+        span{
+            display:block;
+            position:absolute;
+            right:5px;
+            color:rgb(154, 154, 154);
+            cursor:pointer;
+        }
+    }
+}
+.profile-section-container{
+    background-color: white;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:14px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.header-section-container{
+    font-size:14px;
+    color:#008069;
+    cursor:default;
+    margin-bottom:14px;
+    width:384px;   
+}
+// Profile .left-section-c(#my-profile)
+.left-section-c{
+    width:100%;
+    height:100%;
+    background-color: gray;
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(0deg, #F0F2F5 84%, #008069  16%);
+    margin-left:-500px;
+    transition: .2s;
+    z-index:15;
+}
+// Profile .header-c(#my-profile header)
+.ls-header-c{
+    height:16%;
+    padding-left:23px !important;
+    padding-right:20px !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+// Profile .ls-items-container(#items-container)
+.ls-items-container-c{
+    color:white;
+    display:flex;
+    height:59px;
+    align-items:center;
+}
+// Profile .back-to-c(#back-to)
+.ls-back-to-c{
+    display:inline-block;
+    width:53px;
+}
+// Profile .i-c(#back-to i)
+.ls-icon-c{
+    cursor:pointer;
+}
+// Profile .back-to-word-c(#back-to-word)
+.back-to-word-c{
+
+}
+// Profile .label-c(#back-to-word label)
+.ls-information-c{   
+    font-size:19px;
+}
+
+// Profile .item-container-c(#item-container)
+#app-container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(0deg, #E1E0DD 82%, $app-background 18%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    #side-container{
+        width:calc(100% - 38px);
+        height:calc(100% - 38px);
+        background-color: red;
+        display:flex;
+            #friends{
+                width:30%;
+                height:100%;
+                background-color: white;
+                position:relative;
+                #see-all-friends{
+                    display:none;/* It will change*/
+                    width:100%;
+                    height:100%;
+                    background: linear-gradient(0deg, #F0F2F5 84%, #008069  16%);
+                    position:absolute;
+                    left:0;
+                    top:0;
+                    z-index:15;
+                }
+                #chatlist-header{
+                    padding:10px 16px;
+                    width:100%;
+                    height:59px;
+                    background-color: #F0F2F5;
+                    display:flex;
+                    justify-content: space-between;
+                        #profile-img-container{
+                            #img-container{
+                                #img{
+                                    background-color: red;
+                                }
+                            }
+                        }
+                        #settings-container{
+                            display:flex;
+                            .container{
+                                position:relative;
+                                display:flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-left:16px;
+                                img{
+                                    z-index: 5;
+                                }
+                                .focus-anim{
+                                    display:block;
+                                    position: absolute;
+                                    left:0;
+                                    top:0;
+                                    width:100%;
+                                    height:100%;
+                                    border-radius:50% !important;
+                                    background-color: rgba(167, 167, 167, 0.411);
+                                }
+                            }
+                        }
+                }
+                #chatlist-search{
+                    background-color: white; 
+                    height:49px;
+                    display:flex;
+                    align-items:center;
+                    padding:0 12px;
+                    #search-container{
+                    display:flex;
+                    align-items: center;
+                    background-color: #F0F2F5;
+                    border-radius:8px;
+                    height:35px;
+                    width:100%;
+                    #search-button{
+                        width:20px;
+                        height:20px;
+                        background-color: transparent;
+                        border:none;
+                        margin-left:15px;
+                    
+                        &:hover{
+                            cursor:pointer;
+                        }
+                        img{
+                            width:100%;
+                            height:100%;
+                            opacity:0.5;
+                        };
+                    }
+                    #search-input{
+                        margin-left:25px;
+                        outline: none;
+                        border:none;
+                        width:80%;
+                        background-color: #F0F2F5;
+                        font-size:14px;
+                    }
+                   #remove-search{
+                    width:20px;
+                    height:20px;
+                    margin:0 10px;
+                    img{
+                        width:100%;
+                        height:100%;
+                        opacity:0.5;
+                    }
+                    &:hover{
+                        cursor:pointer;
+                    }
+                   }
+                    }
+                    #filter-container{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    margin:0 8px;
+                    img{
+                        width:100%;
+                        height:100%;
+                        opacity: 0.5;
+                    }
+                    &:hover{
+                        cursor:pointer;
+                    }
+                    }
+                }
+                #friend-messages{
+                height:80vh;
+                overflow-y:scroll;
+                }
+                #my-profile{
+                    width:100%;
+                    height:100%;
+                    background-color: gray;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    background: linear-gradient(0deg, #F0F2F5 84%, #008069  16%);
+                    margin-left:-500px;
+                    transition: .2s;
+                    z-index:15;
+                    header{ // It will delete
+
+                            // height:16%;
+                            // padding-left:23px !important;
+                            // padding-right:20px !important;
+                            // display:flex;
+                            // flex-direction: column;
+                            // justify-content: flex-end;
+                            #items-container{/* It will delete */
+                                //     color:white;
+                                //     display:flex;
+                                //     height:59px;
+                                //     align-items:center;
+                                    #back-to{ // It will delete
+                                //         display:inline-block;
+                                //         width:53px;
+                                        i{
+                                //             cursor:pointer;
+                                        }
+                                //     }
+                                    #back-to-word{
+                                        label{
+                                //             font-size:19px;
+                                        }
+                                    }
+                                // }
+                        }
+                }
+                    }
+                    main{
+                        margin:28px 0;
+                        #profile-container{
+                            #profile-img-container{
+                                width:200px;
+                                height:200px;background-color: transparent;
+                                border:none;
+                                margin:28px auto;
+                                position:relative;
+                                    #profile-img{
+                                        width:100%;
+                                        height:100%;
+                                        border-radius:50%;
+                                        background-color: bisque;
+                                        cursor:pointer;
+                                        transition:.2s;
+                                     }
+                                #image-hover{
+                                    width:100%;
+                                    height:100%;
+                                    background-color: rgb(84, 89, 121);
+                                    position:absolute;
+                                    border-radius:50%;
+                                    opacity: 0.4;
+                                    top:0;
+                                    display:none;
+                                    cursor:pointer;
+                                    div{
+                                        display:flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        position:absolute;
+                                        left:50%;
+                                        top:50%;
+                                        transform:translate(-50%,-50%);
+                                        color:white;
+                                        font-size:12px;
+                                        i{
+                                            margin-bottom:10px;
+                                        }
+                                    }
+                                }
+                            }
+                            #name-container{
+                        #your-name{
+                        }
+
+                        #name-input-container{
+                            input{
+                                &:focus{
+                                }
+                            }
+                            span{
+                                i{
+                                }
+                            }
+                            .smile-check{
+                                display:none;
+                                transition: all .3s;
+                            }
+                        }
+                            }
+                            #name-description{
+                        font-size:14px;
+                        color:#8696A0;
+                        padding-top:4px;
+                        padding-bottom:28px;
+                        padding-left:30px;
+                        padding-right:20px;
+                            }
+                            #about{
+                        .smile-check{
+                            display:none;
+                            transition: all .3s;
+                        }
+                            }
+                        }
+                    }
+            #messages{
+            width:70%;
+            height:100%;
+            background-color: #F8F8F8;
+            }
+                }
+            }
+    }
+    #status-container{
+        width:100vw;
+        height:100vh;
+        position:absolute;
+        left:0;
+        top:0;
+        background-color: #0B141A;
+        display:none;
+        z-index:100;
+        #status{
+            width:1396px;
+            height:calc(100% - 38px);
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            background-color: cadetblue;
+            display:flex;
+            border:none !important;
+            #my-status{
+                width:30%;
+                height:100%;
+                background-color: #1E262C;
+                header{
+                    #status-image-container{
+                        height:69px;
+                        // background-color:#00A884;
+                        margin-top:34px;
+                        display:flex;
+                        align-items: center;
+                        #status-image{
+                            width:68px;
+                            height:64px;
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            img{
+                                width:40px;
+                                height:40px;
+                                background-color: red;
+                                border-radius:50%;
+                            }
+                        }
+                    #status-information{
+                        display:flex;
+                        flex-direction:column;
+
+                    }
+                    }
+                    #status-bottom-information{
+                        color:$status-main-area-color;
+                        font-size:13px;
+                        margin:15px 16px;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-top:10px;
+                        span{
+                            a{
+                                color:#027EB5;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    hr{
+                        display:inline-block;
+                        width:90%;
+                        height:1px;
+                        border:none;
+                        background-color: rgba(128, 128, 128, 0.438);
+                        position:relative;
+                        left:50%;
+                        transform:translateX(-50%);
+                    }
+                }
+            }
+            #main-area{
+                width:70%;
+                height:100%;
+                background-color: #0B141A;
+                font-size:16px;
+                color:$status-main-area-color;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            div{
+                display:flex;
+                flex-direction: column;
+                align-items:center;
+                #img-container{
+                    margin-bottom:30px;
+                    i{
+                        display:block;
+                    }
+                }
+            }
+            }
+            #close-container{
+                #close{
+                    position:absolute;
+                    right:75px;
+                    top:15px;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}
+
+
+// Animations 
+// animation for .smile container(class)
+@keyframes smileCheckAnimOpened {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes statusContainerOpeningAnim{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes statusContainerClosingAnim{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+  /*# sourceMappingURL=style.css.map */

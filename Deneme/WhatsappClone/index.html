@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Whatsapp-256.png">
+    <script src="https://kit.fontawesome.com/7d2c7b5e28.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="app-container">
+        <div id="side-container">
+            <div id="friends">
+                <header id="chatlist-header">
+                    <div id="profile-img-container">
+                        <div id="img-container">
+                            <img id="img" class="container">
+                        </div>
+                    </div>
+                    <div id="settings-container">
+                        <div class="container chatlist-icons-container">
+                            <img src="https://cdn0.iconfinder.com/data/icons/phosphor-bold-vol-2/256/circle-dashed-bold-256.png"
+                                alt="" class="chatlist-header-icons" id="chatlist-status-icon" draggable="false">
+                            <!-- <div class="focus-anim"></div> -->
+                        </div>
+                        <div class="container chatlist-icons-container">
+                            <img src="https://cdn4.iconfinder.com/data/icons/essential-app-2/16/chat-conversation-message-talk-256.png"
+                                alt="" class="chatlist-header-icons chatlist-header-icon-right" draggable="false">
+                            <!-- <div class="focus-anim"></div> -->
+                        </div>
+                        <div class="container chatlist-icons-container">
+                            <img src="https://cdn1.iconfinder.com/data/icons/jumpicon-basic-ui-glyph-1/32/-_Dot-More-Vertical-Menu-256.png"
+                                alt="" class="chatlist-header-icons chatlist-header-icon-right" draggable="false">
+                            <!-- <div class="focus-anim"></div> -->
+                        </div>
+                    </div>
+                </header>
+                <section id="chatlist-search">
+                    <div id="search-container">
+                        <button id="search-button">
+                            <img src="https://cdn1.iconfinder.com/data/icons/jumpicon-basic-ui-glyph-1/32/-_Magnifier-Search-Zoom--256.png"
+                                alt="">
+                        </button>
+                        <input type="text" id="search-input" placeholder="Aratın veya yeni sohbet başlatın">
+                        <div id="remove-search">
+                            <img src="https://cdn3.iconfinder.com/data/icons/user-interface-169/32/cross-256.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div id="filter-container">
+                        <img src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_filter_list_48px-256.png"
+                            alt="">
+                    </div>
+                </section>
+                <section id="friend-messages">
+                </section>
+                <section id="my-profile">
+                    <header class="ls-header-c">
+                        <div id="items-container" class="ls-items-container-c">
+                            <span id="back-to" class="ls-back-to-c"><i class="fa-solid fa-arrow-left ls-icon-c"></i></span>
+                            <div id="back-to-word" class="ls-back-to-word-c"><label class="ls-information-c">Profil</label> </div>
+                        </div>
+                    </header>
+                    <main>
+                        <div id="profile-container">
+                            <div id="profile-img-container">
+                                <img alt="" id="profile-img">
+                                <div id="image-hover">
+                                    <div>
+                                        <i class="fa-solid fa-camera fa-2x"></i>
+                                        <span>PROFİL</span>
+                                        <span>FOTOĞRAFINI </span>
+                                        <span>DEĞİŞTİR</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="name-container" style="margin-bottom:10px;" class="profile-section-container">
+                                <div id="your-name" class="header-section-container">Adınız</div>
+                                <div id="name-input-container" class="profile-input-container">
+                                    <div class="input-container">
+                                        <input type="text">
+                                        <span class="pen"><i class="fa-solid fa-pen"></i></span>
+                                        <span class="smile-check">
+                                            <i class="fa-solid fa-face-grin"></i>
+                                            <i class="fa-solid fa-check thick"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="name-description">
+                                <span>Bu kullanıcı adınız veya anahtarınız değildir. Bu ad WhatsApp kişileriniz
+                                    tarafından görülebilir.</span>
+                            </div>
+                            <div id="about" class="profile-section-container">
+                                <div id="about-of-you" class="header-section-container">Hakkımda</div>
+                                <div id="about-input-container" class="profile-input-container">
+                                    <div class="input-container">
+                                        <input type="text">
+                                        <span class="pen"><i class="fa-solid fa-pen"></i></span>
+                                        <span class="smile-check">
+                                            <i class="fa-solid fa-face-grin"></i>
+                                            <i class="fa-solid fa-check thick"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </section>
+                <section id="see-all-friends">
+                    <header class="ls-header-c">
+                        <div id="af-items-container" class="ls-items-container-c">
+                            <span id="af-back-to" class="ls-back-to-c"><i class="fa-solid fa-arrow-left ls-icon-c"></i></span>
+                            <div id="af-back-to-word" class="ls-back-to-word-c"><label class="ls-information-c">Yeni sohbet</label> </div>
+                        </div>
+                    </header>
+                    <main>
+
+                    </main>
+                </section>
+
+            </div>
+        </div>
+        <div id="status-container">
+            <div id="status">
+                <div id="my-status">
+                    <header>
+                        <div id="status-image-container">
+                            <div id="status-image">
+                                <img alt="">
+                            </div>
+                            <div id="status-information">
+                                <span style="font-size:16px;color:white;margin-bottom:5px;">Durumum</span>
+                                <span style="font-size:13px;color:#FFFFFF8C;">Güncelleme yok</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="status-bottom-information">
+                            <i class="fa-solid fa-lock" style="margin-right:10px;"></i>
+                            <span>Durum güncellemeleriniz <a href="#">uçtan uca şifrelidir</a></span>
+                        </div>
+                    </header>
+                </div>
+                <div id="main-area">
+                    <div>
+                        <div id="img-container">
+                            <i class="fa-solid fa-circle fa-4x" style="color:#FFFFFF8C;"></i>
+                        </div>
+                        <span>Durum güncellemesini görmek için bir kişinin adına tıklayın</span>
+                    </div>
+                </div>
+                <div id="close-container">
+                    <div id="close">
+                        <i class="fa-solid fa-xmark fa-2x" style="color:white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

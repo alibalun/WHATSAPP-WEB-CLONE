@@ -1,0 +1,742 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 4px;
+  background-color: #cacaca;
+}
+
+/* Classes in here for usage on website */
+.container {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.chatlist-header-icons {
+  width: 22px;
+  height: 22px;
+}
+
+.chatlist-header-icon-right {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.chatlist-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* .logoContainer */
+.logo-container {
+  width: 95%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 73px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.21);
+  padding: 0 15px;
+}
+
+/* .logo-sqr */
+.logo-sqr {
+  width: 49px !important;
+  height: 49px !important;
+  background-color: red;
+}
+
+/* createImageContainer() */
+.image-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+/* messageHeaderContainer */
+.message-header-container {
+  width: 84%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 12px;
+}
+
+/* createMessageHeader */
+.message-header {
+  font-size: 17px;
+  width: 100%;
+  position: relative;
+}
+
+/* createMessageTime() */
+.message-time {
+  color: green !important;
+  font-weight: bold !important;
+  font-size: 12px !important;
+  position: absolute !important;
+  right: 0 !important;
+}
+
+/* createLastMessageContainer() */
+.last-message-container {
+  font-size: 14px;
+  text-overflow: hidden;
+}
+
+/* Profile section */
+.profile-input-container {
+  font-size: 17px;
+  color: #3B4A54;
+  width: 384px;
+}
+
+.profile-input-container .input-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.profile-input-container .input-container input {
+  height: 20px;
+  margin: 8px 0;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+}
+
+.profile-input-container .input-container input:focus {
+  outline: none;
+  /* set with js */
+  border-bottom: 2px solid #008069;
+}
+
+.profile-input-container .input-container span {
+  display: block;
+  position: absolute;
+  right: 5px;
+  color: #9a9a9a;
+  cursor: pointer;
+}
+
+.profile-section-container {
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header-section-container {
+  font-size: 14px;
+  color: #008069;
+  cursor: default;
+  margin-bottom: 14px;
+  width: 384px;
+}
+
+.left-section-c {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(84%, #F0F2F5), color-stop(16%, #008069));
+  background: linear-gradient(0deg, #F0F2F5 84%, #008069 16%);
+  margin-left: -500px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: 15;
+}
+
+.ls-header-c {
+  height: 16%;
+  padding-left: 23px !important;
+  padding-right: 20px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ls-items-container-c {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 59px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ls-back-to-c {
+  display: inline-block;
+  width: 53px;
+}
+
+.ls-icon-c {
+  cursor: pointer;
+}
+
+.ls-information-c {
+  font-size: 19px;
+}
+
+#app-container {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(82%, #E1E0DD), color-stop(18%, #00A884));
+  background: linear-gradient(0deg, #E1E0DD 82%, #00A884 18%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app-container #side-container {
+  width: calc(100% - 38px);
+  height: calc(100% - 38px);
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#app-container #side-container #friends {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+
+#app-container #side-container #friends #see-all-friends {
+  display: none;
+  /* It will change*/
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(84%, #F0F2F5), color-stop(16%, #008069));
+  background: linear-gradient(0deg, #F0F2F5 84%, #008069 16%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 15;
+}
+
+#app-container #side-container #friends #chatlist-header {
+  padding: 10px 16px;
+  width: 100%;
+  height: 59px;
+  background-color: #F0F2F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#app-container #side-container #friends #chatlist-header #profile-img-container #img-container #img {
+  background-color: red;
+}
+
+#app-container #side-container #friends #chatlist-header #settings-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#app-container #side-container #friends #chatlist-header #settings-container .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 16px;
+}
+
+#app-container #side-container #friends #chatlist-header #settings-container .container img {
+  z-index: 5;
+}
+
+#app-container #side-container #friends #chatlist-header #settings-container .container .focus-anim {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50% !important;
+  background-color: rgba(167, 167, 167, 0.411);
+}
+
+#app-container #side-container #friends #chatlist-search {
+  background-color: white;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 12px;
+}
+
+#app-container #side-container #friends #chatlist-search #search-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F0F2F5;
+  border-radius: 8px;
+  height: 35px;
+  width: 100%;
+}
+
+#app-container #side-container #friends #chatlist-search #search-container #search-button {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: 15px;
+}
+
+#app-container #side-container #friends #chatlist-search #search-container #search-button:hover {
+  cursor: pointer;
+}
+
+#app-container #side-container #friends #chatlist-search #search-container #search-button img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+#app-container #side-container #friends #chatlist-search #search-container #search-input {
+  margin-left: 25px;
+  outline: none;
+  border: none;
+  width: 80%;
+  background-color: #F0F2F5;
+  font-size: 14px;
+}
+
+#app-container #side-container #friends #chatlist-search #search-container #remove-search {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+#app-container #side-container #friends #chatlist-search #search-container #remove-search img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+#app-container #side-container #friends #chatlist-search #search-container #remove-search:hover {
+  cursor: pointer;
+}
+
+#app-container #side-container #friends #chatlist-search #filter-container {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+}
+
+#app-container #side-container #friends #chatlist-search #filter-container img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+#app-container #side-container #friends #chatlist-search #filter-container:hover {
+  cursor: pointer;
+}
+
+#app-container #side-container #friends #friend-messages {
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+#app-container #side-container #friends #my-profile {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(84%, #F0F2F5), color-stop(16%, #008069));
+  background: linear-gradient(0deg, #F0F2F5 84%, #008069 16%);
+  margin-left: -500px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: 15;
+}
+
+#app-container #side-container #friends #my-profile header #items-container {
+  /* It will delete */
+}
+
+#app-container #side-container #friends #my-profile main {
+  margin: 28px 0;
+}
+
+#app-container #side-container #friends #my-profile main #profile-container #profile-img-container {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: none;
+  margin: 28px auto;
+  position: relative;
+}
+
+#app-container #side-container #friends #my-profile main #profile-container #profile-img-container #profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: bisque;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#app-container #side-container #friends #my-profile main #profile-container #profile-img-container #image-hover {
+  width: 100%;
+  height: 100%;
+  background-color: #545979;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.4;
+  top: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#app-container #side-container #friends #my-profile main #profile-container #profile-img-container #image-hover div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+}
+
+#app-container #side-container #friends #my-profile main #profile-container #profile-img-container #image-hover div i {
+  margin-bottom: 10px;
+}
+
+#app-container #side-container #friends #my-profile main #profile-container #name-container #name-input-container .smile-check {
+  display: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#app-container #side-container #friends #my-profile main #profile-container #name-description {
+  font-size: 14px;
+  color: #8696A0;
+  padding-top: 4px;
+  padding-bottom: 28px;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+
+#app-container #side-container #friends #my-profile main #profile-container #about .smile-check {
+  display: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#app-container #side-container #friends #my-profile #messages {
+  width: 70%;
+  height: 100%;
+  background-color: #F8F8F8;
+}
+
+#app-container #status-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #0B141A;
+  display: none;
+  z-index: 100;
+}
+
+#app-container #status-container #status {
+  width: 1396px;
+  height: calc(100% - 38px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: cadetblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none !important;
+}
+
+#app-container #status-container #status #my-status {
+  width: 30%;
+  height: 100%;
+  background-color: #1E262C;
+}
+
+#app-container #status-container #status #my-status header #status-image-container {
+  height: 69px;
+  margin-top: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app-container #status-container #status #my-status header #status-image-container #status-image {
+  width: 68px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app-container #status-container #status #my-status header #status-image-container #status-image img {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+#app-container #status-container #status #my-status header #status-image-container #status-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#app-container #status-container #status #my-status header #status-bottom-information {
+  color: #FFFFFF8C;
+  font-size: 13px;
+  margin: 15px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+}
+
+#app-container #status-container #status #my-status header #status-bottom-information span a {
+  color: #027EB5;
+  text-decoration: none;
+}
+
+#app-container #status-container #status #my-status header hr {
+  display: inline-block;
+  width: 90%;
+  height: 1px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.438);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#app-container #status-container #status #main-area {
+  width: 70%;
+  height: 100%;
+  background-color: #0B141A;
+  font-size: 16px;
+  color: #FFFFFF8C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app-container #status-container #status #main-area div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app-container #status-container #status #main-area div #img-container {
+  margin-bottom: 30px;
+}
+
+#app-container #status-container #status #main-area div #img-container i {
+  display: block;
+}
+
+#app-container #status-container #status #close-container #close {
+  position: absolute;
+  right: 75px;
+  top: 15px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes smileCheckAnimOpened {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes smileCheckAnimOpened {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes statusContainerOpeningAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes statusContainerOpeningAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes statusContainerClosingAnim {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes statusContainerClosingAnim {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

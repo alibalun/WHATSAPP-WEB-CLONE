@@ -1,0 +1,197 @@
+{
+    "groups": [
+        {
+            "groupName": "Tekno Yazılım Group",
+            "groupId": 1, 
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905511071997",
+            "lastMessage": "Merhaba Ali",
+            "messageTime" : "12:56"
+        },
+        {
+            "groupName": "MEU CE",
+            "groupId": 2, 
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905372148610",
+            "lastMessage": "Nasılsın ?",
+            "messageTime" : "11:06"
+        },
+        {
+            "groupName": "Gencler Birliği",
+            "groupId": 3, 
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905346789689",
+            "lastMessage": "Maç kac kaç gençler? ",
+            "messageTime" : "21:34"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Tekno Yazılım Group",
+            "groupId": 1, 
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905511071997",
+            "lastMessage": "Merhaba Ali",
+            "messageTime" : "12:56"
+        },
+        {
+            "groupName": "MEU CE",
+            "groupId": 2, 
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905372148610",
+            "lastMessage": "Nasılsın ?",
+            "messageTime" : "11:06"
+        },
+        {
+            "groupName": "Gencler Birliği",
+            "groupId": 3, 
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905346789689",
+            "lastMessage": "Maç kac kaç gençler? ",
+            "messageTime" : "21:34"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        },
+        {
+            "groupName": "Developers",
+            "groupId": 4,
+            "groupImage": "D:\\VSCODE\\Deneme\\images\\teknojpg.jpg",
+            "groupDescription":"Tekno yazılım tarafından olusturulan grup!!",
+            "phoneNumber": "+905519081763",
+            "lastMessage": "Okulda mısın?",
+            "messageTime" : "24:00"
+        }
+    ],
+    "myProfile":{
+        "myName": "Ali Balun",
+        "myDescription": ".",
+        "myPhoneNumber": "+905515155151"
+    },
+    "users": [
+        {
+            "userName":"Ali Balun",
+            "userNumber":"05515515264",
+            "userImage": "",
+            "userDescription":"."
+        },
+        {
+            "userName":"Ali Balun",
+            "userNumber":"05515515264",
+            "userImage": "",
+            "userDescription":"."
+        },
+        {
+            "userName":"Ali Balun",
+            "userNumber":"05515515264",
+            "userImage": "",
+            "userDescription":"."
+        },
+        {
+            "userName":"Ali Balun",
+            "userNumber":"05515515264",
+            "userImage": "",
+            "userDescription":"."
+        }
+    ]
+}
